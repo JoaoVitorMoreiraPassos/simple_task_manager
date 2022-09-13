@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background: #c4f9ff;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    align-items: center;
+    height: 4rem;
+    margin-bottom: 3rem;
+}
+nav{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header div img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+nav div{
+    padding: 0 15px;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+#abrircadastro:hover{
+    box-shadow: 1px 1px 8px white;
+}
+#abrircadastroatividade:hover{
+    box-shadow: 1px 1px 8px white;
+}
+
+.conteiner{
+    width: 90%;
+    display: flex;
+    justify-content:center;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+section{
+    margin: 10px;
+    margin-bottom: 3rem;
+}
+
+#insert_task{
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+select{
+    padding-right: 10px ;
+}
+#materia_select{
+    height: 25px;
+    width: 300px;
+    font-size: 1.05rem;
+    padding-left: 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    border: none;
+    outline: 1px gray groove;
+    color:#111;
+    appearance:none;
+}
+option{
+    color: #111;
+}
+#end_task{
+    display: flex;
+    justify-content: space-between;
+}
+label{
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+input{
+    color: #111;
+    font-size: 1.05rem;
+    border-radius: 10px;
+    border: none;
+    outline: 1px gray groove;
+    padding-right: 5px;
+}
+
+button{
+    cursor: pointer;
+}
+#ocultar{
+    display: none;
+}
+#insert_task input{
+    height: 25px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    outline: 1px gray groove;
+    border: none;
+    border-radius: 10rem;
+}
+#insert_task input#enddate{
+    width: 55%;
+}
+#insert_task button{
+    align-self: center;
+    color: #111;
+    height: 30px;
+    width: 180px;
+    border: none;
+    border-radius: 10rem;
+    font-size: 1.1rem
+}
+
+#tasks{
+    width: 700px;
+    justify-content: center;
+    overflow: scroll;
+}
+table, th, td {
+    border: 1px solid rgb(69, 138, 202);
+    border-collapse: collapse;
+}
+table{
+    width: 100%;
+    border: 1px #111;
+    overflow: scroll;
+}
+
+th{
+    height: 25px;
+    font-size: 1.2rem;
+}
+
+td{
+    padding: 0 5px;
+    text-align: center;
+}
+#deletar{
+    border-color: black;
+}
+#editar, #deletar{
+    cursor: pointer;
+}
+
+#cadastro{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+    padding: 10px;
+    margin-bottom: 3rem;
+    color: white;
+}
+h3{
+    margin-bottom: 1.5rem;
+}
+#cadastro div{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+#novamateria{
+    height: 30px;
+    width: 190px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px black;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#cadastro button{
+    width: 130px;
+    height: 30px;
+    border-radius: 15px;
+    border:none;
+    outline: none;
+    color: #111;
+}
+
+#mains{
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+.editor{
+    /* justify-self: center; */
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    height: 130px;
+    border-radius: 10px;
+}
+.editorboxes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 45%;
+    width: 100%;
+}
+.editor-exit{
+    display:  flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 98%;
+}
+.btn-exit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 10rem;
+    outline: none;
+    border: none;
+    padding: auto;
+    cursor: pointer;
+}
+.cancel{
+    width: 13px;
+    height: 13px;
+    border-radius: 10rem;
+}
+
+.btn-edit{
+    width: 150px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #111;
+}
+#editor input{
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 1rem;
+}
+#editor select{
+    height: 30px;
+    padding-left: 10px;
+    width: 150px;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+}
+.active-table{
+    display: table;
+}
+.active{
+    display: flex;
+}
+.hidde{
+    display: none;
+}
+.back-blue{
+    background:#0d98ba;
+    color: white;
+}
+.back-white{
+    background: white;
+    color: #111;
+}
+.back-del{
+    cursor: pointer;
+    height: 30px;
+    width: 90px;
+    background: #ba560d;
+    color: white;
+}
+.back-del:hover{
+    box-shadow: 0px 0px 5px black;  
+}
+.back-edit{
+    cursor: pointer;
+    height: 30px;
+    width: 90px;
+    color: white;
+    background: #ba9b0d;
+}
+.back-edit:hover{
+    box-shadow: 0px 0px 8px black;
+}
